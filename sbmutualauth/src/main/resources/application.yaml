@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: sbmutauthserver
+server:
+  ssl:
+    key-store: classpath:serverkeystore.jks
+    key-store-password: abcd1234
+    key-alias: server
+    key-password: abcd
+    enabled: true
+    trust-store: classpath:servertruststore.jks
+    trust-store-password: abcd1234
+    client-auth: need
+  port: 8443
+logging:
+  level:
+    org.springframwork: DEBUG
